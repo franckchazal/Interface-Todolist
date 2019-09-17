@@ -1,0 +1,83 @@
+#appli{
+    color:#ffffff;
+    font-size: 3em;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+h5{
+    text-align: center;
+    font-size: 4em;
+    color:#007bff;
+    font-family: 'Fredericka the Great', cursive;
+  
+}
+
+#listTask{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.list-group-item{
+    width: 80%;
+}
+
+.badge{
+    float: right;
+}
+
+.check{
+    width:20px;
+	height:20px;
+}
+#rowCases{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#checkAll{
+    color:#007bff;
+    font-size: 1.1em;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+}
+
+.mat{
+    color:#1d8aff;
+    background-color:#ffffff;
+
+}
+
+img{
+    height: 25px;
+    width: 25px;
+}
+
+#butflex{
+    display: flex;
+    justify-content: center;
+}
+
+#addButton{
+   width: 25%;
+}
+
+#prog{
+    width: 200px;
+    height: 40px;
+    font-size: 1.2em;
+    font-family: 'Fredericka the Great', cursive;
+    margin-right: 70px;
+}
+
+#karma{
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 2em;
+    color:white;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+li{
+    color:#007bff;
+    font-weight: bold;
+}

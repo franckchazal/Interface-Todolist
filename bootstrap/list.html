@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Connect.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Task Creation</title>
+  </head>
+  <body>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#" id="appli">Organeasy</a>
+        <span class="navbar-text">
+          <a class="nav-link" href="#"><i class="material-icons"  id="done">done_outline</i></a>
+        </span>
+      </nav> 
+
+      <form class="container">
+            <div class="form-group row mt-5 pl-5">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Task</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Task">
+              </div>
+            </div>
+            <div class="form-group row mt-5 pl-5">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Descriptif</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Descriptif">
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <div class="row mt-5 pl-5">
+                <legend class="col-form-label col-sm-2 pt-0">Priority</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                    <span class="badge badge-danger"> Urgent</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                    <span class="badge badge-warning"> Important</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                    <label class="form-check-label" for="gridRadios3">
+                    <span class="badge badge-success"> Nice to have</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row mt-5 pl-5">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Date échéance</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control w-25">
+                </div>
+            </div>
+            <div class="form-group row mt-5 pl-5">
+              <div class="col-sm-10">
+                <button type="button" class="btn btn-primary" id="retour" onclick="window.location.href='boostrap.html'">Create</button>
+                <button type="button" class="btn btn-secondary ml-3" id="retour" onclick="window.location.href='boostrap.html'">Cancel</button>
+              </div>
+            </div>
+          </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

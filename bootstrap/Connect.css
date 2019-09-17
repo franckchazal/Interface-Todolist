@@ -1,0 +1,25 @@
+#appli{
+    color:#ffffff;
+    font-size: 5em;
+    font-family: 'Fredericka the Great', cursive;
+   
+}
+#formconnect{
+    margin-left: 35%;
+}
+
+#done{
+position:absolute;
+right:80px;
+bottom:20px;
+font-size: 6em;
+}
+
+#footer{
+    height: 100px;
+}
+
+#Sign{
+    font-size: 1.2em;
+    font-weight: 500;
+}

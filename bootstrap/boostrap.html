@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+<!--Script si je coche la case, elle coche toutes les autres-->
+  <script >
+function cocherTout(etat) {
+  var cases = document.getElementsByTagName('input');   // on recupere tous les INPUT
+   for(var i=1; i<cases.length; i++)     // on les parcourt
+    if(cases[i].type == 'checkbox'){
+      cases[i].checked = etat;
+      }
+      // ... on la coche ou non  
+}
+</script>
+
+    <!-- Navbar bootstrap Logo, menu, karma bar, log out-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#" id="appli">Organeasy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link ml-3" href="#">Todolist <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Share</a>
+        </li>
+        <!-- Dropdown user-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i class="mat material-icons">account_circle</i> Account</a>
+            <a class="dropdown-item" href="#"><i class="mat material-icons">contacts</i> Contact</a>
+            <a class="dropdown-item" href="#"><i class="mat material-icons">calendar_today</i> Agenda</a>
+            <div class="dropdown-divider"></div>
+              <a class="dropdown-item" onclick="window.location.href='Connect.html'" href="#">Log-out</a>
+          </div>
+        </li>
+            <!-- Dropdown contact us-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><img src="image/facebook.png"> Facebook</a>
+            <a class="dropdown-item" href="#"><img src="image/twitter.png"> Twitter</a>
+            <a class="dropdown-item" href="#"><img src="image/instagram.png"> Instagram</a>
+          </div>
+        </li>
+      </ul>
+      <!-- Karma bar-->
+      <div>
+        <p id="karma" >Karma</p>
+      </div>
+      <div id="prog" class="progress">
+        <div class="progress-bar bg-success progress-bar-striped" style="width:90%"><i class="material-icons">thumb_up</i></div>
+      </div>
+      <!-- Log out -->
+      <span class="navbar-text">
+        <a class="nav-link btn btn-primary rounded-pill" onclick="window.location.href='Connect.html'"><i class="material-icons">cancel</i> Log-out</a>
+      </span>
+    </div>
+  </nav> 
+    <!--List task here...-->
+    <div id="listTask" class="container mt-5">
+      <ul class="list-group container mt-4 ">
+        <!--Title-->
+        <h5 class="">Todolist</h5>
+        <!-- Check all checkbox-->
+        <div id="rowCases" class="row mr-5 mb-3">
+          <label id="checkAll">Nice Job</label>&nbsp
+          <input id="cases" type="checkbox" class="check" onclick="cocherTout(this.checked);">
+        </div>
+        <!-- Task here -->
+        <div class="row ">
+          <li class="list-group-item ml-3 col-sm-7 col-md-8 col-lg-9">task 1 <span class="badge badge-danger"> Urgent</span></li>
+          <button class="btn btn-primary rounded-pill ml-3 " onclick="window.location.href='listExe.html'"><i class="material-icons">create</i></button>
+          <button class="btn btn-primary rounded-pill ml-3 "><i class="material-icons">delete</i></button>
+          <input type="checkbox" class="check ml-4 mt-3">
+        </div>
+        <!-- Task here -->
+        <div class="row  mt-4">
+          <li class="list-group-item ml-3 col-sm-7 col-md-8 col-lg-9">task 2 <span class="badge badge-primary"> Important</span></li>
+          <button class="btn btn-primary rounded-pill ml-3 " onclick="window.location.href='listExe.html'"><i class="material-icons">create</i></button>
+          <button class="btn btn-primary rounded-pill ml-3 "><i class="material-icons">delete</i></button>
+          <input type="checkbox" class="check ml-4 mt-3">
+        </div>
+        <!-- Task here -->
+        <div class="row  mt-4">
+          <li class="list-group-item ml-3 col-sm-7 col-md-8 col-lg-9">task 3 <span class="badge badge-success"> Peu important</span></li>
+          <button class="btn btn-primary rounded-pill ml-3 " onclick="window.location.href='listExe.html'"><i class="material-icons">create</i></button>
+          <button class="btn btn-primary rounded-pill ml-3 "><i class="material-icons">delete</i></button>
+          <input type="checkbox" class="check ml-4 mt-3">
+        </div>
+        <!-- Task here -->
+        <div class="row  mt-4">
+          <li class="list-group-item ml-3 col-sm-7 col-md-8 col-lg-9">task 4 <span class="badge badge-success"> Peu important</span></li>
+          <button class="btn btn-primary rounded-pill ml-3 " onclick="window.location.href='listExe.html'"><i class="material-icons">create</i></button>
+          <button class="btn btn-primary rounded-pill ml-3 "><i class="material-icons">delete</i></button>
+          <input type="checkbox" class="check ml-4 mt-3">
+        </div>
+        <!-- Task here -->
+        <div class="row  mt-4">
+          <li class="list-group-item ml-3 col-sm-7 col-md-8 col-lg-9">task 5 <span class="badge badge-success"> Peu important</span></li>
+          <button class="btn btn-primary rounded-pill ml-3 " onclick="window.location.href='listExe.html'"><i class="material-icons">create</i></button>
+          <button class="btn btn-primary rounded-pill ml-3 "><i class="material-icons">delete</i></button>
+          <input type="checkbox" class="check ml-4 mt-3">
+        </div>
+        <!-- New task -->
+        <a href="list.html" id="butflex"><button id="addButton" class="btn btn-primary rounded-pill mt-4 mb-3"><i class="material-icons">note_add</i> New task</button></a>
+      </ul>
+    </div>
+        
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
